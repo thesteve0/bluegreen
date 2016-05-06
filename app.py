@@ -8,7 +8,9 @@ import socket
 @route('/')
 def index():
     host = socket.gethostname()
-    return "<h1> hello blue on: " + str(host)+ " </h1>"
+    # Green - #008000
+    response_string = "<html> <style> body {background-color: #0000FF;} </style> <body> <h1> hello blue on: " + str(host)+ " </h1> </body> </html>"
+    return response_string
 
 
 if __name__ == '__main__':
