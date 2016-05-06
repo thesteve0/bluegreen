@@ -3,11 +3,12 @@ __author__ = 'spousty'
 
 from bottle import route, run, get, post, DEBUG
 import os
-
+import socket
 
 @route('/')
 def index():
-    return "<h1> hello blue </h1>"
+    host = socket.gethostname()
+    return "<h1> hello blue on: " + str(host)+ " </h1>"
 
 
 if __name__ == '__main__':
