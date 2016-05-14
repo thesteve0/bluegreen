@@ -7,9 +7,9 @@ import os
 import socket
 import random
 from random_words import RandomWords
-#import math
+import math
 
-#sorted([math.cos((random.random()*random.random()*2.3))/1.34 for i in range(2000000)])
+
 
 
 @route('/')
@@ -40,6 +40,7 @@ def dbexample():
 
 	cur.close()
 	conn.close()
+	sorted([math.cos((random.random()*random.random()*2.3))/1.34 for i in range(2000000)])
 
 	return  result_string
 
