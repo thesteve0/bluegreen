@@ -16,7 +16,7 @@ from random_words import RandomWords
 def index():
     host = socket.gethostname()
     # Green - #008000
-    response_string = "<html> <style> body {background-color: #0000FF;} </style> <body> <h1> <font color='white'> Hello from  blue on: " + str(host)+ " </font> </h1> </body> </html>"
+    response_string = "<html> <style> body {background-color: ##008000;} </style> <body> <h1> <font color='white'> Hello from  green on: " + str(host)+ " </font> </h1> </body> </html>"
     return response_string
 
 # since this is a read only talk to the replicas
