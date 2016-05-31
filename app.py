@@ -17,7 +17,7 @@ def index():
     host = socket.gethostname()
     # Green - #008000
     # Blue - #0000FF
-    response_string = "<html> <style> body {background-color: #0000FF;} </style> <body> <h1> <font color='white'> We are from Poland and Blue on: " + str(host)+ " </font> </h1> </body> </html>"
+    response_string = "<html> <style> body {background-color: #0000FF;} </style> <body> <h1> <font color='white'> We are from Blue on: " + str(host)+ " </font> </h1> </body> </html>"
     return response_string
 
 # since this is a read only talk to the replicas
