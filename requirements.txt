@@ -1,3 +1,1 @@
 bottle==0.12.8
-psycopg2==2.6.1
-RandomWords==0.2.0
