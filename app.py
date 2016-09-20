@@ -17,7 +17,8 @@ def index():
     host = socket.gethostname()
     # Green - #008000
     # Blue - #0000FF
-    response_string = "<html> <style> body {background-color: #0000FF;} </style> <body> <h1> <font color='white'> We are from blue on: " + str(host)+ " </font> </h1> </body> </html>"
+    # Red - #FF0000
+    response_string = "<html> <style> body {background-color: #FF0000;} </style> <body> <h1> <font color='white'> We are from Red on: " + str(host)+ " </font> </h1> </body> </html>"
     return response_string
 
 
