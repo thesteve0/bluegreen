@@ -2,7 +2,6 @@ __author__ = 'spousty'
 
 
 from bottle import route, run, get, post, DEBUG
-from datadog import statsd
 
 import os
 import socket
@@ -15,7 +14,7 @@ import random
 
 @route('/')
 def index():
-    statsd.increment('bluegreen.numrequests')
+   
     host = socket.gethostname()
     # Green - #008000
     # Blue - #0000FF
